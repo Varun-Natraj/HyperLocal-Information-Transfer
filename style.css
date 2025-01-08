@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Title */
+.title {
+  color: #ff6347;
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 100px;
+}
+
+/* Button Styles */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Form Container */
+.form-container {
+  display: none;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  width: 300px;
+}
+
+/* Dashboard */
+.dashboard {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diagonal-icons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  text-align: center;
+  color: #444;
+}
+
+.icon {
+  background-color: #ff8c00;
+  border: none;
+  padding: 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Post Page */
+.post-page {
+  display: none;
+  text-align: center;
+}
+
+.interactive-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.interactive-icons button {
+  background-color: #ff1493;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Comment Popup */
+.comment-popup {
+  display: none;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #444;
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
