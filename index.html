@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hyperlocal Connect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Page -->
+    <div class="container" id="mainPage">
+        <h1 class="title">Welcome to Hyperlocal Connect</h1>
+        <div class="buttons">
+            <button onclick="showLogin()">Login</button>
+            <button onclick="showRegister()">Register</button>
+        </div>
+    </div>
+
+    <!-- Login Form -->
+    <div class="form-container" id="loginForm">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="form-container" id="registerForm">
+        <h2>Register</h2>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Confirm Password">
+        <button onclick="register()">Register</button>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div class="dashboard" id="dashboardPage">
+        <h1>Dashboard</h1>
+        <div class="diagonal-icons">
+            <button class="icon" onclick="openPostPage()">Post</button>
+            <button class="icon" onclick="openStories()">Stories</button>
+            <button class="icon" onclick="openChat()">Chat</button>
+            <button class="icon" onclick="openFun()">Today’s Fun</button>
+        </div>
+    </div>
+
+    <!-- Post Page -->
+    <div class="post-page" id="postPage">
+        <h2>Share Your Thoughts</h2>
+        <div class="interactive-icons">
+            <button onclick="likePost()">❤️ Like</button>
+            <button onclick="sharePost()">🔗 Share</button>
+            <button onclick="openCommentPopup()">💬 Comment</button>
+        </div>
+        <!-- Comment Section Popup -->
+        <div class="comment-popup" id="commentPopup">
+            <div class="comment-header">
+                <h3>Comments</h3>
+                <button onclick="closeCommentPopup()">X</button>
+            </div>
+            <textarea placeholder="Write a comment..."></textarea>
+            <button onclick="postComment()">Post Comment</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
